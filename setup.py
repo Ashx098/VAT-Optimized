@@ -20,6 +20,6 @@ setup(
     install_requires=["numpy", "scipy", "matplotlib", "numba", "cython"],
     setup_requires=["cython"],  # Ensures Cython is available during setup
     description="VAT Algorithm with Python-C binding using Cython.",
-    author="Your Name",
-    license="MIT",
+    author="MSR AVINASH",
+    license="Apache-2.0",
 )
