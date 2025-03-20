@@ -7,6 +7,7 @@ This package provides an implementation of the **Visual Assessment of Cluster Te
 ✔ Implements the **Prim’s-based VAT Algorithm**  
 ✔ Generates **VAT-reordered dissimilarity matrices**  
 ✔ Provides **optimized VAT using Numba for faster performance**  
+✔ Provides **optimized VAT using CYTHON for Even faster performance**  
 
 ## 📥 Installation
 ```bash
