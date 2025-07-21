@@ -1,42 +1,74 @@
-# VAT Clustering Algorithm 🚀
+# Fast-VAT: Accelerated Visual Assessment of Cluster Tendency 🚀
 
 ## 📌 Overview
-This package provides an implementation of the **Visual Assessment of Cluster Tendency (VAT) Algorithm**, allowing users to **analyze dataset clusterability before applying clustering techniques.**  
+
+**Fast-VAT** is a high-performance implementation of the Visual Assessment of Cluster Tendency (VAT) algorithm. It allows users to visually assess the presence of clustering structure in datasets before applying clustering algorithms like K-Means or DBSCAN.
+
+This package includes:
+
+* A baseline implementation of VAT using NumPy and SciPy.
+* Accelerated variants using **Numba** (JIT compilation) and **Cython** (C-level optimizations).
+* Example evaluations and visualizations on standard benchmark datasets.
 
 ## ⚡ Features
-✔ Implements the **Prim’s-based VAT Algorithm**  
-✔ Generates **VAT-reordered dissimilarity matrices**  
-✔ Provides **optimized VAT using Numba for faster performance**  
-✔ Provides **optimized VAT using CYTHON for Even faster performance**  
 
-##📊 Datasets Used
-We tested our implementation on the following datasets:
+* ✅ Implements Prim’s-based VAT algorithm for dissimilarity matrix reordering.
+* 🚀 Accelerated versions using **Numba** (25–35× faster).
+* 🧪 High-performance Cython implementation with up to **50× speedup**.
+* 🎯 Validates cluster tendency using **Hopkins statistic**, **PCA**, **t-SNE**.
+* 📊 Comparative analysis with **K-Means** and **DBSCAN**.
 
-Iris
+## 📊 Datasets Used
 
-Spotify subset (500x500)
+We evaluated Fast-VAT on the following datasets:
 
-Mall Customers
+* Iris (3-class flower classification)
+* Spotify subset (500×500 feature matrix)
+* Mall Customers (customer segmentation)
+* Synthetic datasets:
 
-Blobs
+  * Blobs (well-separated clusters)
+  * Circles (nonlinear structure)
+  * Moons (interleaved crescents)
+  * Gaussian Mixture Models (GMM)
 
-Circles
-
-Gaussian Mixture
-
-Moons
-
-All datasets are stored as .npy dissimilarity matrices under /data.
-
+> ℹ️ All datasets are preprocessed and stored as `.npy` dissimilarity matrices under the `/data` directory.
 
 ## 📥 Installation
-```bash
-pip install -e .
 
-##👨‍🏫 Acknowledgments
+Clone the repository and install in editable mode:
+
+```bash
+git clone https://github.com/Ashx098/VAT-Optimized.git
+cd VAT-Optimized
+pip install -e .
+```
+
+## 📁 Directory Structure
+
+```
+VAT-Optimized/
+├── vat/                    # VAT algorithm implementations
+│   ├── baseline_vat.py
+│   ├── fast_vat_numba.py
+│   ├── fast_vat_cython.py
+├── data/                  # Precomputed distance matrices (.npy)
+├── figures/               # VAT output visualizations
+├── scripts/               # Evaluation scripts and notebooks
+├── LICENSE
+├── README.md
+```
+
+## 🙏 Acknowledgments
+
 This project was developed under the guidance of:
 
-Prof. Ismael Lachheb
-EPITA School of Engineering and Computer Science
+**Prof. Ismael Lachheb**
+*EPITA School of Engineering and Computer Science*
 Paris, France
+
+**MSR Avinash**
+*Presidency University, Bangalore* (Work conducted during exchange at EPITA)
+
+---
 
