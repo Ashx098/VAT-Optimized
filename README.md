@@ -44,20 +44,6 @@ cd VAT-Optimized
 pip install -e .
 ```
 
-## 📁 Directory Structure
-
-```
-VAT-Optimized/
-├── vat/                    # VAT algorithm implementations
-│   ├── baseline_vat.py
-│   ├── fast_vat_numba.py
-│   ├── fast_vat_cython.py
-├── data/                  # Precomputed distance matrices (.npy)
-├── figures/               # VAT output visualizations
-├── scripts/               # Evaluation scripts and notebooks
-├── LICENSE
-├── README.md
-```
 
 ## 🙏 Acknowledgments
 
