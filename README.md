@@ -1,5 +1,7 @@
 # Fast-VAT: Accelerated Visual Assessment of Cluster Tendency 🚀
 
+[![arXiv](https://img.shields.io/badge/arXiv-2507.15904-b31b1b.svg)](https://arxiv.org/abs/2507.15904)
+
 ## 📌 Overview
 
 **Fast-VAT** is a high-performance implementation of the Visual Assessment of Cluster Tendency (VAT) algorithm. It allows users to visually assess the presence of clustering structure in datasets before applying clustering algorithms like K-Means or DBSCAN.
